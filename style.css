@@ -16,6 +16,10 @@ button {
   flex-wrap: wrap;
 }
 
+body {
+  background-color: gray;
+}
+
 .team_member {
   text-align: center;
   margin: 20px;
@@ -28,4 +32,12 @@ button {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+header {
+  background-color: #000000;
+  padding: 0px 0px;
+  color: white;
+  height: 100px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
