@@ -22,16 +22,38 @@ body {
 
 .team_member {
   text-align: center;
-  margin: 20px;
+  margin: 1.25rem;
+  padding: 1rem;
+  width: 250px;
 }
 
 .team_member img {
   size: 80%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team_member h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.team_member p {
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.team_member a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team_member a:hover {
+  color: #007BFF;
 }
 
 header {
