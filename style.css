@@ -24,13 +24,13 @@ body {
 
 .team_member {
   text-align: center;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .team_member img {
   size: 80%;
-  width: 150px;
-  height: 150px;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -38,10 +38,14 @@ body {
 
 header {
   background-color: #000000;
-  padding: 0px 0px;
   color: white;
-  height: 100px;
+  height: 3.5em;
   width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .gallery-item {
