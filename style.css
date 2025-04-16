@@ -1,4 +1,10 @@
-button {
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+.main-btn {
   background-color: #000000;
   border: none;
   color: white;
@@ -20,17 +26,23 @@ body {
   background-color: gray;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
 }
 
 .team_member {
   text-align: center;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .team_member img {
   size: 80%;
-  width: 150px;
-  height: 150px;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -38,17 +50,24 @@ body {
 
 header {
   background-color: #000000;
-  padding: 0px 0px;
+  padding: 0 0;
   color: white;
   height: 100px;
   width: 100%;
 }
 
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
 .gallery-item {
   align-content: center;
   text-align: center;
-  font-size: 20px;
-  width: 10vw;
+  width: 15vw;
+  margin: 2em;
 }
 
 .gallery-image {
@@ -59,36 +78,56 @@ header {
   background-color: lightgrey;
   font-weight: bold;
   font-size: 0.8em;
-  padding: 3px;
+  padding: 0.2em;
   margin: 0.5em 0 0 0;
 }
 
-.footer-container {
+.footer {
   width: 100vw;
   min-height: 7em;
   align-content: center;
-  justify-content: center;
+  justify-items: center;
   color: white;
   background-color: black;
-  position: fixed;
-  bottom: 0;
 }
-
-.footer-contact {
-  width: 200px;
-}
-
-.hidden-input {
-  color: white;
+.footer button {
+  text-align: center;
+  padding: 0.3em 2em;
+  height: 50%;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
   border: none;
+}
+.footer button:hover {
+  cursor: pointer;
+  background-color: #b8b8b8;
+}
+.footer button:active {
+  background-color: #6c6c6c;
+}
+.footer .footer-contact {
+  width: 10em;
+  min-width: 196px;
+}
+.footer .input-container {
+  width: 100%;
+}
+.footer .hidden-input {
+  color: white;
+  border: dashed #fff;
+  border-width: 0 0 1px 0;
   background-color: rgba(255, 255, 255, 0);
 }
-.hidden-input:active {
-  border: none;
-}
-.hidden-input:focus {
-  border: none;
-}
-.hidden-input:hover {
+.footer .hidden-input:hover {
   cursor: default;
+}
+.footer .footer-contact {
+  cursor: default;
+}
+.footer .footer-grid {
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */

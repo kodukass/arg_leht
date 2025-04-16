@@ -5,23 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <script src="gallery.js" defer></script>
   <title>Gallery</title>
 </head>
+
 <body>
-  <div class="gallery-item">
-    <img src="assets/placeholder-landscape.png" alt="gallery-image" class="gallery-image">
-    <p class="gallery-title">Title</p>
-  </div>
-  
-  <div class="footer-container">
-    <div class="footer-contact">
-      <i class="fi fi-rr-phone-call"></i>
-      <input type="text" class="hidden-input">
-      <i class="fi fi-rr-marker"></i>
-      <input type="text" class="hidden-input">
-      <i class="fi fi-rr-envelope"></i>
-      <input type="text" class="hidden-input">
+
+  <div class="page-content">
+    <div class="gallery-container">
+      <div id="galleryItem" class="gallery-item">
+        <img src="assets/placeholder-landscape.png" alt="gallery-image" class="gallery-image">
+      </div>
+      <div id="galleryItem" class="gallery-item">
+        <img src="assets/placeholder-landscape.png" alt="gallery-image" class="gallery-image">
+      </div>
     </div>
   </div>
+
+  
+
+  <div class="footer">
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <div class="input-container">
+          <i class="fi fi-rr-phone-call"></i>
+        <input type="text" class="hidden-input">
+        </div>
+        <div class="input-container">
+          <i class="fi fi-rr-marker"></i>
+        <input type="text" class="hidden-input">
+        </div>
+        <div class="input-container">
+          <i class="fi fi-rr-envelope"></i>
+        <input type="text" class="hidden-input">
+        </div>
+      </div>
+      <button>Contact us</button>
+    </div>
+    
+  </div>
+
 </body>
+
 </html>
