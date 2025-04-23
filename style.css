@@ -16,10 +16,10 @@ html, body {
 }
 
 .team_container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 body {
@@ -155,7 +155,7 @@ header {
 }
 
 @media only screen and (max-width: 1100px) {
-  .gallery-container {
+  .gallery-container, .team_container {
     grid-template-columns: repeat(3, 1fr);
   }
   .gallery-item {
@@ -163,7 +163,7 @@ header {
   }
 }
 @media only screen and (max-width: 800px) {
-  .gallery-container {
+  .gallery-container, .team_container {
     grid-template-columns: repeat(2, 1fr);
   }
   .gallery-item {
