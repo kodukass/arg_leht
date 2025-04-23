@@ -25,7 +25,6 @@ html, body {
 body {
   background-color: gray;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -88,8 +87,8 @@ header {
 .gallery-item {
   align-content: center;
   text-align: center;
-  width: 15vw;
-  margin: 2em;
+  width: 15em;
+  margin: 1em;
 }
 
 .gallery-image {
@@ -105,7 +104,7 @@ header {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   min-height: 7em;
   align-content: center;
   justify-items: center;
@@ -131,9 +130,8 @@ header {
 .footer .footer-contact {
   width: 10em;
   min-width: 196px;
-}
-.footer .input-container {
-  width: 100%;
+  justify-items: inherit;
+  cursor: default;
 }
 .footer .hidden-input {
   color: white;
@@ -144,12 +142,37 @@ header {
 .footer .hidden-input:hover {
   cursor: default;
 }
-.footer .footer-contact {
-  cursor: default;
-}
 .footer .footer-grid {
   align-items: center;
   justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 2vw;
+}
+.footer .input-container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 1100px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  gallery-item {
+    width: 10em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .html, body {
+    font-size: 14px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .hidden-input {
+    width: 10em;
+  }
 }/*# sourceMappingURL=style.css.map */
