@@ -158,8 +158,8 @@ header {
   .gallery-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  gallery-item {
-    width: 10em;
+  .gallery-item {
+    width: 13em;
   }
 }
 @media only screen and (max-width: 800px) {
