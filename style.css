@@ -16,10 +16,10 @@ html, body {
 }
 
 .team_container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 body {
@@ -42,8 +42,8 @@ body {
 
 .team_member img {
   size: 80%;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -67,6 +67,39 @@ body {
 
 .team_member a:hover {
   color: #007BFF;
+}
+
+.nimi_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.nimi_member {
+  text-align: center;
+  margin: 1.25rem;
+  padding: 1rem;
+  width: 250px;
+}
+
+.nimi_member img {
+  size: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nimi_text {
+  text-align: left;
+  display: block;
+  font-size: 1em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
 
 header {
@@ -155,7 +188,7 @@ header {
 }
 
 @media only screen and (max-width: 1100px) {
-  .gallery-container {
+  .gallery-container, .team_container {
     grid-template-columns: repeat(3, 1fr);
   }
   .gallery-item {
@@ -163,7 +196,7 @@ header {
   }
 }
 @media only screen and (max-width: 800px) {
-  .gallery-container {
+  .gallery-container, .team_container {
     grid-template-columns: repeat(2, 1fr);
   }
   .gallery-item {
@@ -178,4 +211,18 @@ header {
   .hidden-input {
     width: 10em;
   }
+}
+.banner {
+  width: 100%;
+  height: 300px;
+  display: block;
+  background-image: url("assets/placeholder-landscape.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  top: 0px;
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
