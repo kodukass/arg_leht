@@ -166,6 +166,9 @@ header {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-item {
+    width: 10em;
+  }
   .html, body {
     font-size: 14px;
   }
