@@ -59,7 +59,7 @@ body
 
 .nimi_container
   display: grid
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: 1fr 2fr
   align-items: center
   justify-items: center
 
@@ -75,6 +75,16 @@ body
   height: 200px
   border-radius: 50%
   margin-bottom: 10px
+
+.nimi_text
+  text-align: left
+  display: block
+  font-size: 1em
+  margin-top: 0.67em
+  margin-bottom: 0.67em
+  margin-left: 0
+  margin-right: 0
+  font-weight: bold
 
 header
   background-color: #000000
@@ -161,6 +171,8 @@ header
 
   .gallery-item
     width: 13em
+
+
 
 @media only screen and (max-width: 800px)
   .gallery-container, .team_container
