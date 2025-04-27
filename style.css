@@ -13,6 +13,8 @@ html, body {
   text-decoration: none;
   font-size: 16px;
   border-radius: 50px;
+  margin-left: 40px;
+  margin-right: 0;
 }
 
 .team_container {
@@ -219,7 +221,7 @@ header {
 }
 .banner {
   width: 100%;
-  height: 300px;
+  height: 200px;
   display: block;
   background-image: url("assets/placeholder-landscape.png");
   background-repeat: no-repeat;
@@ -228,6 +230,29 @@ header {
   top: 0px;
   color: white;
   font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.banner h3 {
   margin-top: 0;
-  padding: 0;
+  padding-top: 0;
+  margin-left: 40px;
+  margin-right: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.homepage-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  padding-right: 40px;
+  gap: 40px;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.homepage-container br {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
