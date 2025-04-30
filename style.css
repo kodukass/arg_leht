@@ -4,26 +4,6 @@ html, body {
   font-size: 16px;
 }
 
-.main-btn {
-  background-color: #000000;
-  border: none;
-  color: white;
-  padding: 20px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 50px;
-  margin-left: 40px;
-  margin-right: 0;
-}
-
-.team_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-items: center;
-}
-
 body {
   background-color: gray;
   padding: 0;
@@ -40,6 +20,26 @@ body {
   padding: 10px;
 }
 
+.main-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 32px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.team_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
 .team_member {
   text-align: center;
   margin: 1.25rem;
@@ -48,7 +48,6 @@ body {
 }
 
 .team_member img {
-  size: 80%;
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -78,7 +77,7 @@ body {
 
 .nimi_container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
 }
@@ -91,10 +90,11 @@ body {
 }
 
 .nimi_member img {
-  size: 100%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 10px;
 }
 
@@ -228,7 +228,7 @@ body {
   .gallery-item {
     width: 10em;
   }
-  .html, body {
+  html, body {
     font-size: 14px;
   }
   .footer {
