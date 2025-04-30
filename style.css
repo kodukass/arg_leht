@@ -16,8 +16,9 @@ body {
 }
 
 .page-content h1 {
-  margin: 2px;
+  margin: 5px;
   padding: 10px;
+  text-align: center;
 }
 
 .main-btn {
@@ -107,6 +108,15 @@ body {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+}
+
+.hallo {
+  color: inherit;
+  transition: color 1s ease;
+  font: inherit;
+}
+.hallo:hover {
+  color: red;
 }
 
 .header {
