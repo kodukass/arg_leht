@@ -112,14 +112,28 @@ body {
 .header {
   background-color: #000000;
   color: white;
-  height: 200px;
+  height: 5000px !important;
   width: 100%;
-  top: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 25px;
 }
 
 .menu {
-  align-items: center;
-  color: #ffffff;
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  color: white;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
 }
 
 .gallery-container {
