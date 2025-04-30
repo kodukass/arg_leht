@@ -95,13 +95,27 @@ body
 .header
   background-color: #000000
   color: white
-  height: 200px
+  height: 5000px !important
   width: 100%
-  top: 0
+  position: relative // this helps if you're positioning child elements
+  display: flex      // this ensures children like .menu can be aligned
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  padding: 25px
 
 .menu
-  align-items: center
-  color: #ffffff
+  display: flex
+  gap: 20px
+  text-decoration: none
+  color: white
+
+  a
+    color: white
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
 
 .gallery-container
   display: grid
