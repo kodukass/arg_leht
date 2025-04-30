@@ -118,22 +118,34 @@ body
 
 
 .header
+  position: relative
   background-color: #000000
   color: white
-  height: 5000px !important
+  height: 500px
   width: 100%
-  position: relative // this helps if you're positioning child elements
-  display: flex      // this ensures children like .menu can be aligned
-  align-items: center
-  justify-content: center
   box-sizing: border-box
   padding: 25px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.logo
+  height: 38px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  transition: all 0.3s ease
+
+  &:hover
+    content: url("assets/vision-red.png")
 
 .menu
+  position: absolute
+  right: 25px
+  top: 50%
+  transform: translateY(-50%)
   display: flex
   gap: 20px
-  text-decoration: none
-  color: white
 
   a
     color: white
@@ -141,6 +153,11 @@ body
 
     &:hover
       text-decoration: underline
+
+  i
+    margin: 20px
+
+  
 
 
 .gallery-container
