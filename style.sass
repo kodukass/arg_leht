@@ -51,9 +51,11 @@ body
   background-color: gray
   padding: 0
   @include flex-column
+  min-height: 100vh
 
 .page-content
   flex: 1
+  width: 100%
 
 .page-content h1
   margin: 5px
@@ -99,6 +101,7 @@ body
   @include center-grid(2)
   flex: 1
   align-self: stretch
+  min-height: calc(100vh - 80px - 7em)
 
 .nimi_member
   text-align: center
@@ -254,7 +257,7 @@ body
   .gallery-container, .team_container, .nimi_container
     grid-template-columns: 1fr
 
-  .team_member, .nimi_member, .gallery-item
+  .nimi_member, .gallery-item
     width: 100%
     margin: 0.5em auto
 
