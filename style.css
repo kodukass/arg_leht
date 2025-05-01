@@ -81,6 +81,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  flex: 1;
+  align-self: stretch;
 }
 
 .nimi_member {
@@ -240,7 +242,7 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
-  .gallery-container, .team_container {
+  .gallery-container, .team_container, .nimi_container {
     grid-template-columns: repeat(3, 1fr);
   }
   .gallery-item {
@@ -248,10 +250,10 @@ body {
   }
 }
 @media only screen and (max-width: 800px) {
-  .gallery-container, .team_container {
+  .gallery-container, .team_container, .nimi_container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .gallery-item {
+  .gallery-item, .team_member, .nimi_member {
     width: 10em;
   }
   html, body {
@@ -262,6 +264,15 @@ body {
   }
   .hidden-input {
     width: 10em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .gallery-container, .team_container, .nimi_container {
+    grid-template-columns: 1fr;
+  }
+  .team_member, .nimi_member, .gallery-item {
+    width: 100%;
+    margin: 0.5em auto;
   }
 }
 .banner {
