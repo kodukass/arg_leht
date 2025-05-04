@@ -93,3 +93,10 @@ document.getElementById("locationInput").addEventListener("input", (e) => {
 document.getElementById("mailInput").addEventListener("input", (e) => {
   localStorage.setItem("mailInput", e.target.value);
 });
+
+
+//hamburger menu
+function mobileMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("responsive");
+} 

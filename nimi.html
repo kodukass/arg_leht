@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="gallery.js" defer></script>
     <title>Gregory House</title>
 </head>
 <body>
-
   <div class="header">
-    <img class="logo" src="assets/vision.png" alt="image of the company logo, that shows an eye with three people standing under it"></img>
-    <div class="menu">
+    <a href="index.html" class="logo-link">
+        <img class="logo" src="assets/vision.png" alt="image of the company logo, that shows an eye with three people standing under it">
+    </a>
+    <a href="javascript:void(0);" class="menu-toggle" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+    <div class="menu" id="menu">
         <a href="gallery.html">
-            <i class="fi fi-rr-gallery"></i>
+          <i class="fi fi-rr-gallery"></i>
+          <span class="label">Gallery</span>
         </a>
         <a href="#footer">
-            <i class="fi fi-rr-key"></i>
+          <i class="fi fi-rr-key"></i>
+          <span class="label">Log In</span>
         </a>
         <a href="team.html">
-            <i class="fi fi-rr-people"></i>
+          <i class="fi fi-rr-people"></i>
+          <span class="label">Team</span>
         </a>
-    </div>
-  </div>
+        
+      </div>
+</div>
 
   <div class="page-content">
         <section>
