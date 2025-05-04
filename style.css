@@ -300,7 +300,7 @@ body {
     grid-template-columns: 1fr;
   }
   .nimi_member, .gallery-items {
-    width: 100%;
+    width: 90%;
   }
   .nimi_container {
     margin-top: 1.5rem;
