@@ -252,20 +252,29 @@ body
   .input-container
     width: fit-content
 
+    
+
 
 @media only screen and (max-width: 1100px)
-  .gallery-container, .team_container, .nimi_container
+  .gallery-container, .team_container
     grid-template-columns: repeat(3, 1fr)
+
+  .nimi_container
+    grid-template-columns: repeat(2, 1fr)
 
   .gallery-item
     width: 13em
+
 
 @media only screen and (max-width: 800px)
   .gallery-container, .team_container, .nimi_container
     grid-template-columns: repeat(2, 1fr)
 
-  .gallery-item, .team_member, .nimi_member
+  .gallery-item, .team_member
     width: 10em
+  
+  .nimi_member
+    width: 15em
 
   html, body
     font-size: 14px
@@ -276,7 +285,6 @@ body
   .hidden-input
     width: 10em
 
-  .nimi_text
     
 
 @media only screen and (max-width: 500px)
