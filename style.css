@@ -1,4 +1,5 @@
 html, body {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -219,6 +220,16 @@ body {
   margin: 0.5em 0 0 0;
 }
 
+.hidden-input {
+  color: white;
+  border: dashed #fff;
+  border-width: 0 0 1px 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.hidden-input:hover {
+  cursor: default;
+}
+
 .footer {
   width: 100%;
   min-height: 7em;
@@ -247,15 +258,6 @@ body {
   width: 10em;
   min-width: 196px;
   justify-items: inherit;
-  cursor: default;
-}
-.footer .hidden-input {
-  color: white;
-  border: dashed #fff;
-  border-width: 0 0 1px 0;
-  background-color: rgba(255, 255, 255, 0);
-}
-.footer .hidden-input:hover {
   cursor: default;
 }
 .footer .footer-grid {
@@ -420,4 +422,82 @@ body {
 }
 .secretsecret {
   color: #666666;
+}
+
+.contacted-page {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contacted-page button {
+  text-align: center;
+  padding: 0.3em 2em;
+  height: 50%;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  margin-left: 0;
+}
+.contacted-page button:hover {
+  cursor: pointer;
+  background-color: #b8b8b8;
+}
+.contacted-page button:active {
+  background-color: #6c6c6c;
+}
+
+.contacted-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.cord-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.bg-gif {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.joined-page .page-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: 4% 10% 86%;
+  align-items: center;
+  justify-items: center;
+  font-size: 18px;
+}
+.joined-page .page-wrapper button {
+  text-align: center;
+  padding: 0.3em 2em;
+  height: 50%;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  margin-left: 0;
+}
+.joined-page .page-wrapper button:hover {
+  cursor: pointer;
+  background-color: #b8b8b8;
+}
+.joined-page .page-wrapper button:active {
+  background-color: #6c6c6c;
+}
+.joined-page .page-wrapper img {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
