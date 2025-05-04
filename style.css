@@ -299,9 +299,8 @@ body {
   .gallery-container, .team_container, .nimi_container {
     grid-template-columns: 1fr;
   }
-  .nimi_member, .gallery-item {
+  .nimi_member, .gallery-items {
     width: 100%;
-    margin: 0.5em auto;
   }
   .nimi_container {
     margin-top: 1.5rem;
