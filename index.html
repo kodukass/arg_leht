@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/vision.png">
     <script src="gallery.js" defer></script>
     <title>Homepage</title>
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <a href="index.html" class="logo-link">
             <img class="logo" src="assets/vision.png" alt="image of the company logo, that shows an eye with three people standing under it">
         </a>
@@ -35,40 +36,41 @@
             </a>
             
           </div>
-    </div>
+        </header>
+    
     <div class="page-content">
         <div class="banner">
-            <h3>“besutiful quote runs here”</h3>
+            <h3>“beautiful quote runs here”</h3>
             <a href="gallery.html" class="main-btn">Gallery</a>
         </div>        
-        <div class="homepage-container">
+        <section class="homepage-container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum iaculis quam, eu tempor dui semper et. Quisque fermentum augue vitae odio pulvinar laoreet. Fusce finibus odio ac placerat consequat. Aliquam eros enim, vulputate et convallis at, placerat ut arcu. Phasellus vulputate at lorem sed hendrerit. Ut mattis, nibh vel varius euismod, purus sapien rhoncus eros, vitae consectetur ante felis in nibh <span class="hallo">1212</span>. Cras dignissim massa vitae nunc ullamcorper, in imperdiet mauris porttitor. Donec non justo pretium, gravida felis at, porttitor mauris. Maecenas tempor, magna id iaculis tempus, sapien enim euismod arcu, quis rutrum velit orci in nisl. Mauris vulputate hendrerit leo nec luctus.
             <br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum iaculis quam, eu tempor dui semper et. Quisque fermentum augue vitae odio pulvinar laoreet. Fusce finibus odio ac placerat consequat. Aliquam eros enim, vulputate et convallis at, placerat ut arcu. Phasellus vulputate at lorem sed hendrerit. Ut mattis, nibh vel varius euismod, purus sapien rhoncus eros, vitae consectetur ante felis in nibh. Cras dignissim massa vitae nunc ullamcorper, in imperdiet mauris porttitor. Donec non justo pretium, gravida felis at, porttitor mauris. Maecenas tempor, magna id iaculis tempus, sapien enim euismod arcu, quis rutrum velit orci in nisl. Mauris vulputate hendrerit leo nec luctus.
             </p>
             <img src="assets/placeholder-landscape.png" alt="homepage-image" class="gallery-image">
-        </div>
+        </section>
     </div>
     
-    <div class="footer" id="footer">
+    <footer class="footer" id="footer">
         <div class="footer-grid">
             <div class="footer-contact">
                 <div class="input-container">
-                    <i class="fi fi-rr-phone-call"></i>
-                    <input type="text" class="hidden-input" id="phoneInput">
-                </div>
-                <div class="input-container">
-                    <i class="fi fi-rr-marker"></i>
-                    <input type="text" class="hidden-input" id="locationInput">
-                </div>
-                <div class="input-container">
-                    <i class="fi fi-rr-envelope"></i>
-                    <input type="text" class="hidden-input" id="mailInput">
-                </div>
+                    <label for="phone"><i class="fi fi-rr-phone-call"></i></label>
+                    <input type="text" class="hidden-input" id="phoneInput" value="phone">
+                  </div>
+                  <div class="input-container">
+                    <label for="location"><i class="fi fi-rr-marker"></i></label>
+                    <input type="text" class="hidden-input" id="locationInput" value="location">
+                  </div>
+                  <div class="input-container">
+                    <label for="mail"><i class="fi fi-rr-envelope"></i></label>
+                    <input type="text" class="hidden-input" id="mailInput" value="mail">
+                  </div>
             </div>
           <button class="btn" id="submitBtn">Contact us</button>
         </div>
-    </div>
+    </footer>
     
 </body>
 </html>

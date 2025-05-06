@@ -6,33 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/vision.png">
     <script src="gallery.js" defer></script>
     <title>Team page</title>
 </head>
 <body>
-  <div class="header">
+  <header class="header">
     <a href="index.html" class="logo-link">
         <img class="logo" src="assets/vision.png" alt="image of the company logo, that shows an eye with three people standing under it">
     </a>
     <a href="javascript:void(0);" class="menu-toggle" onclick="mobileMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <i class="fa fa-bars"></i>
+    </a>
     <div class="menu" id="menu">
-        <a href="gallery.html">
-          <i class="fi fi-rr-gallery"></i>
-          <span class="label">Gallery</span>
-        </a>
-        <a href="#footer">
-          <i class="fi fi-rr-key"></i>
-          <span class="label">Log In</span>
-        </a>
-        <a href="team.html">
-          <i class="fi fi-rr-people"></i>
-          <span class="label">Team</span>
-        </a>
-        
-      </div>
-</div>
+      <a href="gallery.html">
+        <i class="fi fi-rr-gallery"></i>
+        <span class="label">Gallery</span>
+      </a>
+      <a href="#footer">
+        <i class="fi fi-rr-key"></i>
+        <span class="label">Log In</span>
+      </a>
+      <a href="team.html">
+        <i class="fi fi-rr-people"></i>
+        <span class="label">Team</span>
+      </a>
+      
+    </div>
+  </header>
 
   <div class="page-content">
     <h1>TEAM</h1>
@@ -82,24 +83,24 @@
         </section>
   </div>
 
-  <div class="footer" id="footer">
+  <footer class="footer" id="footer">
     <div class="footer-grid">
       <div class="footer-contact">
         <div class="input-container">
-          <i class="fi fi-rr-phone-call"></i>
-        <input type="text" class="hidden-input" id="phoneInput">
+          <label for="phone"><i class="fi fi-rr-phone-call"></i></label>
+          <input type="text" class="hidden-input" id="phoneInput" value="phone">
         </div>
         <div class="input-container">
-          <i class="fi fi-rr-marker"></i>
-        <input type="text" class="hidden-input" id="locationInput">
+          <label for="location"><i class="fi fi-rr-marker"></i></label>
+          <input type="text" class="hidden-input" id="locationInput" value="location">
         </div>
         <div class="input-container">
-          <i class="fi fi-rr-envelope"></i>
-        <input type="text" class="hidden-input" id="mailInput">
+          <label for="mail"><i class="fi fi-rr-envelope"></i></label>
+          <input type="text" class="hidden-input" id="mailInput" value="mail">
         </div>
       </div>
       <button class="btn" id="submitBtn">Contact us</button>
     </div>
-  </div>
+  </footer>
 </body>
 </html>

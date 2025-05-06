@@ -48,7 +48,8 @@ function applyChangedStyles(source, target) {
 
 window.onload = function () {
   const originalDiv = document.getElementById("galleryItem"); // replace with your actual div ID
-  copyWithClassesOnly(originalDiv, 10);
+  copyWithClassesOnly(originalDiv, 10); 
+  document.querySelector('.logo-link').focus();
 };
 
 document.getElementById("submitBtn").addEventListener("click", function () {
