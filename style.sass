@@ -1,19 +1,23 @@
+// a quick flex column layout I use a lot
 @mixin flex-column
   display: flex
   flex-direction: column
 
+// easy grid center layout, just plug in how many columns I want
 @mixin center-grid($columns)
   display: grid
   grid-template-columns: repeat($columns, 1fr)
   align-items: center
   justify-items: center
 
+// same idea but for rows instead of columns
 @mixin grid-rows($rows)
   display: grid
   grid-template-rows: repeat($rows, 1fr)
   align-items: center
   justify-items: center
 
+// for circular profile pics or team member images
 @mixin circular-image($size)
   width: $size
   height: $size
@@ -21,6 +25,7 @@
   object-fit: cover
   margin-bottom: 10px
 
+// big pill-style buttons with customizable colors
 @mixin rounded-button($bg-color, $text-color)
   background-color: $bg-color
   color: $text-color
@@ -31,6 +36,7 @@
   text-align: center
   text-decoration: none
 
+// footer-style button with hover + active styles
 @mixin footer-button
   text-align: center
   padding: 0.3em 2em
@@ -47,6 +53,7 @@
   &:active
     background-color: #6c6c6c
 
+// base styles for the whole page
 html, body
   scroll-behavior: smooth
   height: 100%
@@ -57,6 +64,7 @@ html, body
   font-weight: 600
   font-style: normal
 
+// gray background + vertical layout
 body
   background-color: gray
   padding: 0
@@ -67,12 +75,13 @@ body
   flex: 1
   width: 100%
 
+// make all h1's inside .page-content look nice and centered
 .page-content h1
   margin: 5px
   padding: 10px
   text-align: center
 
-
+// main call-to-action button
 .main-btn
   @include rounded-button(#000000, white)
   margin-left: 40px
@@ -81,9 +90,8 @@ body
   &:focus
     outline: 2px solid black
     outline-offset: 2px
-    
 
-
+// team section – grid layout
 .team_container
   @include center-grid(4)
 
@@ -109,9 +117,9 @@ body
   color: inherit
 
 .team_member a:hover 
-  color: #007BFF
+  color: #007BFF // make links blue on hover
 
-
+// style for each specific member
 .nimi_container
   @include center-grid(2)
   flex: 1
@@ -138,15 +146,16 @@ body
   font-weight: bold
   margin-left: 2rem
 
-
+// transition effect for text hover
 .hallo
-    color: inherit
-    transition: color 1s ease
-    font: inherit
+  color: inherit
+  transition: color 1s ease
+  font: inherit
 
-    &:hover
-      color: red
+  &:hover
+    color: red
 
+// sticky header
 .header
   position: relative
   background-color: #000000
@@ -159,6 +168,7 @@ body
   justify-content: center
   align-items: center
 
+// the logo sits in the center
 .logo
   height: 40px
   position: absolute
@@ -175,6 +185,7 @@ body
   transform: translateX(-50%)
   height: 40px
 
+// top nav menu
 .menu
   position: absolute
   right: 25px
@@ -207,7 +218,7 @@ body
     margin: 20px
     color: white
 
-
+// image gallery
 .gallery-container
   @include center-grid(4)
 
@@ -227,15 +238,17 @@ body
   padding: 0.2em
   margin: 0.5em 0 0 0
 
+// hidden-style input field
 .hidden-input
-    color: white
-    border: dashed #fff
-    border-width: 0 0 1px 0
-    background-color: #ffffff00
+  color: white
+  border: dashed #fff
+  border-width: 0 0 1px 0
+  background-color: #ffffff00
 
-    &:hover
-      cursor: default
+  &:hover
+    cursor: default
 
+// footer styling
 .footer
   width: 100%
   min-height: 7em
@@ -266,7 +279,7 @@ body
   .input-container
     width: fit-content
 
-
+// tablet size
 @media only screen and (max-width: 1100px)
   .gallery-container, .team_container
     grid-template-columns: repeat(3, 1fr)
@@ -277,7 +290,7 @@ body
   .gallery-item
     width: 13em
 
-
+// smaller devices
 @media only screen and (max-width: 800px)
   .gallery-container, .team_container, .nimi_container
     grid-template-columns: repeat(2, 1fr)
@@ -297,7 +310,7 @@ body
   .hidden-input
     width: 10em
 
-
+// mobile phones
 @media only screen and (max-width: 500px)
   .gallery-container, .team_container, .nimi_container
     grid-template-columns: 1fr
@@ -308,6 +321,7 @@ body
   .nimi_container
     margin-top: 1.5rem
 
+// banner image section
 .banner
   width: 100%
   height: 240px
@@ -330,7 +344,7 @@ body
   padding-bottom: 20px
   font-size: 40px
 
-
+// layout for homepage content blocks
 .homepage-container
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
@@ -349,8 +363,7 @@ body
 .menu-toggle
   display: none
 
-
-
+// hamburger menu styles
 @media only screen and (max-width: 800px)
   .menu
     display: none
@@ -401,7 +414,6 @@ body
       width: 100%
       text-align: center
       padding: 10px 0
-      
 
     i
       display: none
@@ -411,10 +423,11 @@ body
       color: white
       align-items: center
 
-
+// easter egg, can you find it? hihi
 .secretsecret
   color: #666666
 
+// styling for contacted page
 .contacted-page
   background-color: black
   justify-content: center
@@ -424,7 +437,6 @@ body
   button
     @include footer-button
     margin-left: 0
-
 
 .contacted-container
   @include grid-rows(5)
@@ -439,8 +451,10 @@ body
   left: 0
   z-index: -10
 
+// final page
 .joined-page
   background-color: black
+
   .page-wrapper
     width: 100%
     height: 100%
@@ -448,18 +462,20 @@ body
     align-content: center
     text-align: center
     font-size: 18px
+
     button
       @include footer-button
       max-height: 36px
       margin-left: 0
+
     img
       height: auto
       max-width: 100%
       max-height: 100em
       object-fit: contain
+
     .joined-container
       display: flex
       flex-direction: column
       align-items: center
       gap: 20px
-    
